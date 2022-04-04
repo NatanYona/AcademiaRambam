@@ -18,17 +18,19 @@ footer{
     width: 100%;
 }
 
-.imgIndex{
-    width: 90vw;
-}
 
 .indexImgEstrellas{
     width: 30%;
 }
 
-.piedepag{
-    background-color: var(--ColorPrimario);
+.cursosImg{
+    width: 90%;
 }
+
+
+
+
+
 
 /* Telefono */
 
