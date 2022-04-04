@@ -27,13 +27,14 @@ footer{
     width: 90%;
 }
 
-
-
-
+.noticiasDiv{
+    cursor: pointer;
+}
 
 
 /* Telefono */
 
-@media (max-with: 768px) {
+@media (max-with: 769px) {
+    
 
 }
