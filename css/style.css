@@ -4,37 +4,12 @@
 }
 
 
-:root{
-    --ColorPrimario: #0d6efd;
-    --ColorTexto: ;
-}
-
-footer{
-    width: 100%;
-}
-
-
-.idenxImgOpinion{
-    width: 100%;
-}
-
-
 .indexImgEstrellas{
     width: 30%;
 }
 
-.cursosImg{
-    width: 90%;
-}
 
 .noticiasDiv{
     cursor: pointer;
 }
 
-
-/* Telefono */
-
-@media (max-with: 769px) {
-    
-
-}
