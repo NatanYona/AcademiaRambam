@@ -5,30 +5,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Academia Rambam</title>
+    <title>Ingresante - Academia Rambam</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./img/icono.ico">
 
 </head>
 
-<!-- NavBar -->
+<!-- Aviso -->
+
 <body>
-    <header class="container-fluid bg-primary d-flex justify-content-center">
-        <p class="text-light mb-0 p-2 fs-6">Inscripciones Abiertas</p>
+    <header class="container-fluid avisoTop">
+        <p class="avisoTopText">Inscripciones Abiertas</p>
     </header>
+
+
+    <!-- NavBar -->
     <nav class="navbar navbar-expand-lg navbar-light p-3" id="menu">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                <span class="fs-5 text-primary fw-bold">Academia Rambam</span>
+                <span class="tituloNavbar">Academia Rambam</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
@@ -51,10 +55,10 @@
 
 
 
-<!-- Carrucel -->
+    <!-- Carrucel -->
 
 
-    <section class="figure d-flex justify-content-center m-2 m-md-3 m-lg-5">
+    <section class="figure carrucelIndex m-md-3 m-lg-5">
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -66,7 +70,7 @@
                 </div>
                 <div class="carousel-item">
                     <img src="./img/table-cafe-street-restaurant-city-furniture-730853-pxhere.com.jpg"
-                        class= "figure-img img-fluid rounded" alt="...">
+                        class="figure-img img-fluid rounded" alt="...">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
@@ -84,19 +88,23 @@
 
 
 
-<!-- Opinion -->
+    <!-- Opinion -->
 
 
-    <section class="m-3 ps-lg-5">
+    <section class="opinionSection ps-lg-5">
         <div class="conteiner-fluid row">
             <div class="col-xs-12 col-md-5 pt-4">
                 <div>
                     <p>
-                        Curse el curso de <span class="text-primary fw-bold">Tasación de Inmuebles</span> y estoy muy satisfecha con el resultado. Contenido <span class="text-primary fw-bold">claro</span>, con buenos <span class="text-primary fw-bold">ejemplos</span> y <span class="text-primary fw-bold">ejercitación</span>. Ante dudas me contacté con los profesores y me brindaron apoyo sin problema y con amplia disponibilidad. La verdad muy a gusto!
+                        Curse el curso de <span class="textoResaltadoBold">Tasación de Inmuebles</span> y estoy muy
+                        satisfecha con el resultado. Contenido <span class="textoResaltadoBold">claro</span>, con buenos
+                        <span class="textoResaltadoBold">ejemplos</span> y <span
+                            class="textoResaltadoBold">ejercitación</span>. Ante dudas me contacté con los profesores y
+                        me brindaron apoyo sin problema y con amplia disponibilidad. La verdad muy a gusto!
                     </p>
                 </div>
-                <div class="d-flex justify-content-end">
-                    <img src="./img/calificacion.png" alt="" class="indexImgEstrellas">
+                <div class="opinionEstrellasDiv">
+                    <img src="./img/calificacion.png" alt="" class="opinionEstrellasImg">
                 </div>
             </div>
             <div class="col-xs-12 col-md-7 pt-4 figure">
@@ -106,14 +114,12 @@
     </section>
 
 
-<!-- Footer -->
+    <!-- Footer -->
 
     <div class="container">
-        <footer class="row row-cols-5 pt-5 mt-5 mb-3 pb-3 border-top">
+        <footer class="row row-cols-5 footer">
             <div class="col-1">
-                <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
-                </a>
-                <p class="text-muted">Academia Rambam © 2022</p>
+                <p class="textoDifuminado">Academia Rambam © 2022</p>
             </div>
 
             <div class="col-7 col-md-9">
@@ -122,11 +128,11 @@
 
             <div class="col-2">
                 <h5>Redes</h5>
-                <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Facebook</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">LinkedIn</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Instagram</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Twitter</a></li>
+                <ul class="nav footerRedes">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 textoDifuminado">Facebook</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 textoDifuminado">LinkedIn</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 textoDifuminado">Instagram</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 textoDifuminado">Twitter</a></li>
                 </ul>
             </div>
         </footer>

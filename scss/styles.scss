@@ -1,0 +1,120 @@
+@import "reset";
+@import "constantes";
+
+
+
+
+
+/* Index */
+
+
+.avisoTop{
+    display: flex;
+    justify-content: center;
+    background-color: $colorPrimario;
+}
+
+
+.avisoTopText{
+    color: $ColorSecundario;
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin-bottom: 0;
+}
+
+.tituloNavbar{
+    font-size: 1,25rem;
+    font-weight: 700;
+    color: $colorPrimario;
+}
+
+.carrucelIndex{
+    display: flex;
+    justify-content: center;
+    margin: 0.5rem;
+}
+
+
+.opinionSection{
+    margin: 1rem;
+}
+
+.opinionEstrellasDiv{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.opinionEstrellasImg{
+    width: 30%;
+}
+
+/* Footer */
+.footer{
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    border-top: 1px solid $ColorSecundario;
+}
+
+.footerRedes{
+    flex-direction: column;
+}
+
+/* Cursos */
+
+
+.cursosCards{
+    display: flex;
+    justify-content: center;
+}
+
+.cursosSection{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+/* Extensiones */
+
+
+.extensionesDiv{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.extensionesFlex{
+    display: flex;
+    flex-direction: row;
+    height: 75%;
+    flex-wrap: wrap;
+    padding-top: 1.5rem;
+
+}
+
+/* Noticias */
+
+.noticiasDiv{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    
+}
+
+.noticiasCard{
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+
+/* Contacto */
+
+
+.tituloForms{
+    font-size: 2rem;
+    animation-name: fadeIn;
+    animation-fill-mode: both;
+    animation-duration: 2s;
+}

@@ -1,0 +1,29 @@
+/* Constantes */
+
+
+$colorPrimario: #A43DFF;
+$ColorSecundario: #dee2e6;
+$colorTerciario: #B05AFC;
+
+
+.textoResaltadoBold{
+    color: $colorPrimario;
+    font-weight: 700;
+}
+
+.textoResaltado{
+    color: $colorPrimario;
+}
+
+.textoDifuminado{
+    color: $colorTerciario;
+    text-decoration: none;
+}
+
+.colorBtn{
+    color: #ffff;
+    background-color: $colorPrimario;
+    border-color: $colorPrimario;
+
+}
+

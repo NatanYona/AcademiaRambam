@@ -5,24 +5,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cursos</title>
+    <title>Cursos - Academia Rambam</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/icon.ico">
 
 </head>
 
-<!-- NavBar -->
-
+<!-- Aviso -->
 <body>
-    <header class="container-fluid bg-primary d-flex justify-content-center">
+    <header class="container-fluid avisoTop">
         <p class="text-light mb-0 p-2 fs-6">Inscripciones Abiertas</p>
     </header>
+
+<!-- NavBar -->
     <nav class="navbar navbar-expand-lg navbar-light p-3" id="menu">
         <div class="container">
             <a class="navbar-brand" href="../index.html">
-                <span class="fs-5 text-primary fw-bold">Academia Rambam</span>
+                <span class="tituloNavbar">Academia Rambam</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -51,46 +53,46 @@
         </div>
     </nav>
 
-
+<!-- Big Img -->
 
     <section class="figure m-2 m-md-3 m-lg-5">
         <img src="../img/cursos/pexels-buro-millennial-1438072.jpg" alt="" class="figure-img img-fluid rounded">
     </section>
 
+<!-- Cursos -->
 
-
-    <div class="d-flex justify-content-center">
-        <section class="d-flex justify-content-center flex-wrap">
+    <div class="cursosCards">
+        <section class="cursosSection">
             <div class="card p-3 m-2" style="width: 18rem;">
                 <img src="../img/cursos/cursoInmueble.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Tasación de Inmueble</h5>
-                    <p class="card-text">Aprendizaje de métodos para la tasación de distintos <span class="text-primary">productos inmobiliarios</span>.</p>
-                    <a href="#" class="btn btn-primary">Ver mas</a>
+                    <p class="card-text">Aprendizaje de métodos para la tasación de distintos <span class="textoResaltado">productos inmobiliarios</span>.</p>
+                    <a href="#" class="btn colorBtn">Ver mas</a>
                 </div>
             </div>
             <div class="card p-3 m-2" style="width: 18rem;">
                 <img src="../img/cursos/cursoMaquina.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Tasación de Maquinaria Industrial</h5>
-                    <p class="card-text">Manejo de metodología para determinar los valores de las distintas tipologícas de las <span class="text-primary">Maquinarias Industriales</span>.</p>
-                    <a href="#" class="btn btn-primary">Ver mas</a>
+                    <p class="card-text">Manejo de metodología para determinar los valores de las distintas tipologícas de las <span class="textoResaltado">Maquinarias Industriales</span>.</p>
+                    <a href="#" class="btn colorBtn">Ver mas</a>
                 </div>
             </div>
             <div class="card p-3 m-2" style="width: 18rem;">
                 <img src="../img/cursos/cursosIntangible.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Tasación de Bienes Intangibles</h5>
-                    <p class="card-text">¿Qué vale mi emprendimiento en marcha? ¿Es solo la suma de activos físicos? Poder responder estas preguntas nos llevan a desarrollar métodos para determinar el valor de los <span class="text-primary">Activos no Físicos</span>.</p>
-                    <a href="#" class="btn btn-primary">Ver mas</a>
+                    <p class="card-text">¿Qué vale mi emprendimiento en marcha? ¿Es solo la suma de activos físicos? Poder responder estas preguntas nos llevan a desarrollar métodos para determinar el valor de los <span class="textoResaltado">Activos no Físicos</span>.</p>
+                    <a href="#" class="btn colorBtn">Ver mas</a>
                 </div>
             </div>
             <div class="card p-3 m-2" style="width: 18rem;">
                 <img src="../img/cursos/cursoAgricultura.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Tasación Rural</h5>
-                    <p class="card-text">Campos, animales, alambrados, tractores, cosechadoras, silos, tanques australianos... Brindar todas las herramientas para valuar los distintos <span class="text-primary">Bienes que encontramos en el campo</span>.</p>
-                    <a href="#" class="btn btn-primary">Ver mas</a>
+                    <p class="card-text">Campos, animales, alambrados, tractores, cosechadoras, silos, tanques australianos... Brindar todas las herramientas para valuar los distintos <span class="textoResaltado">Bienes que encontramos en el campo</span>.</p>
+                    <a href="#" class="btn colorBtn">Ver mas</a>
                 </div>
         </section>
     </div>
@@ -100,11 +102,9 @@
     <!-- Footer -->
 
     <div class="container">
-        <footer class="row row-cols-5 pt-5 mt-5 mb-3 pb-3 border-top">
+        <footer class="row row-cols-5 footer">
             <div class="col-1">
-                <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
-                </a>
-                <p class="text-muted">Academia Rambam © 2022</p>
+                <p class="textoDifuminado">Academia Rambam © 2022</p>
             </div>
 
             <div class="col-7 col-md-9">
@@ -113,11 +113,11 @@
 
             <div class="col-2">
                 <h5>Redes</h5>
-                <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Facebook</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">LinkedIn</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Instagram</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Twitter</a></li>
+                <ul class="nav footerRedes">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 textoDifuminado">Facebook</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 textoDifuminado">LinkedIn</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 textoDifuminado">Instagram</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 textoDifuminado">Twitter</a></li>
                 </ul>
             </div>
         </footer>
