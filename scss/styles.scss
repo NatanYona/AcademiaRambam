@@ -56,7 +56,7 @@
 }
 
 .footerRedes{
-    flex-direction: column;
+    @include flexdireccion(column);
 }
 
 /* Cursos */
@@ -82,7 +82,7 @@
 
 .extensionesFlex{
     display: flex;
-    flex-direction: row;
+    @include flexdireccion(row);
     height: 75%;
     @include flexwrap(wrap);
     padding-top: 1.5rem;

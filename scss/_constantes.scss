@@ -18,6 +18,10 @@ $colores:(
     flex-wrap: $flexwrap;
 }
 
+@mixin flexdireccion ($flexDirec){
+    flex-direction: $flexDirec;
+}
+
 
 
 .textoResaltadoBold{
