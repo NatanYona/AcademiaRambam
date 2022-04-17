@@ -4,27 +4,29 @@
   margin: 0; }
 
 /* Constantes */
+.avisoTop, .carrucelIndex, .cursosCards, .cursosSection, .noticiasDiv {
+  display: flex;
+  justify-content: center; }
+
 .textoResaltadoBold {
-  color: #A43DFF;
+  color: #a43dff;
   font-weight: 700; }
 
 .textoResaltado {
-  color: #A43DFF; }
+  color: #a43dff; }
 
 .textoDifuminado {
-  color: #B05AFC;
+  color: #b05afc;
   text-decoration: none; }
 
 .colorBtn {
   color: #ffff;
-  background-color: #A43DFF;
-  border-color: #A43DFF; }
+  background-color: #a43dff;
+  border-color: #a43dff; }
 
 /* Index */
 .avisoTop {
-  display: flex;
-  justify-content: center;
-  background-color: #A43DFF; }
+  background-color: #a43dff; }
 
 .avisoTopText {
   color: #dee2e6;
@@ -35,11 +37,9 @@
 .tituloNavbar {
   font-size: 1,25rem;
   font-weight: 700;
-  color: #A43DFF; }
+  color: #a43dff; }
 
 .carrucelIndex {
-  display: flex;
-  justify-content: center;
   margin: 0.5rem; }
 
 .opinionSection {
@@ -64,13 +64,7 @@
   flex-direction: column; }
 
 /* Cursos */
-.cursosCards {
-  display: flex;
-  justify-content: center; }
-
 .cursosSection {
-  display: flex;
-  justify-content: center;
   flex-wrap: wrap; }
 
 /* Extensiones */
@@ -87,8 +81,6 @@
 
 /* Noticias */
 .noticiasDiv {
-  display: flex;
-  justify-content: center;
   flex-wrap: wrap;
   gap: 1.5rem; }
 

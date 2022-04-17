@@ -1,0 +1,7 @@
+Cambios para mejorar el SEO:
+
+Compri las imagenes para que no pesen tanto.
+Agrege KeyWords.
+Agrege una Descripcion.
+Modifique los titulos de las paginas para que esten concorde al contenido.
+Organizacion gerariquica de archivos.

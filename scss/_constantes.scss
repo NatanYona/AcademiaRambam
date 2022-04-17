@@ -1,29 +1,43 @@
 /* Constantes */
 
 
-$colorPrimario: #A43DFF;
-$ColorSecundario: #dee2e6;
-$colorTerciario: #B05AFC;
+$colores:(
+    primario:#a43dff,
+    secundario:#dee2e6,
+    terciario:#b05afc,
+
+);
+
+%flexcenter{
+    display: flex;
+    justify-content: center;
+}
+
+
+@mixin flexwrap ($flexwrap){
+    flex-wrap: $flexwrap;
+}
+
 
 
 .textoResaltadoBold{
-    color: $colorPrimario;
+    color: map-get($colores, primario);
     font-weight: 700;
 }
 
 .textoResaltado{
-    color: $colorPrimario;
+    color: map-get($colores, primario);
 }
 
 .textoDifuminado{
-    color: $colorTerciario;
+    color: map-get($colores, terciario);
     text-decoration: none;
 }
 
 .colorBtn{
     color: #ffff;
-    background-color: $colorPrimario;
-    border-color: $colorPrimario;
+    background-color: map-get($colores, primario);
+    border-color: map-get($colores, primario);
 
 }
 

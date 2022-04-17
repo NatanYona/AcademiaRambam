@@ -9,14 +9,13 @@
 
 
 .avisoTop{
-    display: flex;
-    justify-content: center;
-    background-color: $colorPrimario;
+    @extend %flexcenter;
+    background-color: map-get($colores, primario);
 }
 
 
 .avisoTopText{
-    color: $ColorSecundario;
+    color: map-get($colores, secundario);
     font-size: 1rem;
     padding: 0.5rem;
     margin-bottom: 0;
@@ -25,12 +24,11 @@
 .tituloNavbar{
     font-size: 1,25rem;
     font-weight: 700;
-    color: $colorPrimario;
+    color: map-get($colores, primario);
 }
 
 .carrucelIndex{
-    display: flex;
-    justify-content: center;
+    @extend %flexcenter;
     margin: 0.5rem;
 }
 
@@ -54,7 +52,7 @@
     padding-bottom: 1rem;
     margin-top: 3rem;
     margin-bottom: 1rem;
-    border-top: 1px solid $ColorSecundario;
+    border-top: 1px solid map-get($colores, secundario);
 }
 
 .footerRedes{
@@ -65,14 +63,12 @@
 
 
 .cursosCards{
-    display: flex;
-    justify-content: center;
+    @extend %flexcenter;
 }
 
 .cursosSection{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    @extend %flexcenter;
+    @include flexwrap(wrap);
 }
 
 
@@ -81,14 +77,14 @@
 
 .extensionesDiv{
     display: flex;
-    flex-wrap: wrap;
+    @include flexwrap(wrap);
 }
 
 .extensionesFlex{
     display: flex;
     flex-direction: row;
     height: 75%;
-    flex-wrap: wrap;
+    @include flexwrap(wrap);
     padding-top: 1.5rem;
 
 }
@@ -96,9 +92,8 @@
 /* Noticias */
 
 .noticiasDiv{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    @extend %flexcenter;
+    @include flexwrap(wrap);
     gap: 1.5rem;
     
 }
