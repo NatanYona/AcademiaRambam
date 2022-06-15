@@ -113,3 +113,20 @@
     animation-fill-mode: both;
     animation-duration: 2s;
 }
+
+
+/* login */
+
+.loginBody{
+    background: #a43dff;
+    background: linear-gradient(to right, #a43dff, #ff3d7e);
+}
+
+.hypervinculo{
+    color: map-get($colores, primario);
+    text-decoration: none;
+}
+
+.loginForm{
+    background-color: white;
+}
