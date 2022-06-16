@@ -24,6 +24,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 else{
                 sessionStorage.setItem('user', user.value)
             }
+            userError.innerText = ''
+            pwError.innerText = ''
             window.location.href = '../index.html'
         }
         else if (verify.user == false) {
@@ -32,7 +34,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         else if (verify.pw == false) {
             let pwError = document.getElementById('pwError')
-            pwError.innerHTML = 'Password incorrecto'
+            pwError.innerHTML = 'Contraseña incorrecta'
+            userError.innerHTML = ''
         }
     }
     })
