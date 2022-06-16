@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" href="../img/icono.ico">
+    <script src="../scripts/js/storage.js"></script>
     <meta name="keywords" content="Universidad, Martillero, Adistacia, Cursos, TasacionRural, TasacionAgricola, TasacionInmuebles, Argentina, Cordoba">
     <meta name="description" content="La Academia Rambam fue creada con el propósito de capacitar en materia de evaluación y tasación.">
 
@@ -51,9 +52,14 @@
                         <a class="nav-link" href="../pages/contacto.html">Contacto</a>
                     </li>
                 </ul>
-                <button>
-                    <a class="btn btn-outline" href="../pages/login.html">Iniciar Sesión</a>
-                </button>
+                <div id="userButton">
+                    <a class="btn btn-outline" href="./login.html">Iniciar Sesión</a>
+                </div>
+                <a href="../index.html" id="userLogout" class="d-none btn-logout ms-3">
+                    <img src="../img/login/loguot.png" alt="" class="userLogoutImg">
+                </a>
+            </div>
+            </div>
             </div>
 
         </div>

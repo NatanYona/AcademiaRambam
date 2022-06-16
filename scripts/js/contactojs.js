@@ -1,10 +1,11 @@
 /* Login */
-const Credenciales = {user: 'damian@gmail.com', pass: "1234",name: "Damian"};
+const Credenciales = {user: 'damian@gmail.com', pass: "1234"};
 document.addEventListener('DOMContentLoaded', () => {
     // Obtenemos el formulario
     let form = document.getElementById('loginForm')
     let user = document.getElementById('user')
     let pw = document.getElementById('pw')
+    let storeged = Credenciales.name;
     let remember = document.getElementById('remember')
     let verify = { user: false, pw: false }
 
@@ -21,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 localStorage.setItem('user', user.value)
             }
                 else{
-                sessionStorage.setItem('name', user.value)
+                sessionStorage.setItem('user', user.value)
             }
             window.location.href = '../index.html'
         }
@@ -38,7 +39,3 @@ document.addEventListener('DOMContentLoaded', () => {
     
 })
 
-/* User Buttom */
-if (localStorage.getItem('name') != null) {
-    document.getElementById('userButton').innerHTML = localStorage.getItem('name') || sessionStorage.getItem('name')
-}
