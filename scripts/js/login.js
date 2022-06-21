@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', () => {
     let form = document.getElementById('loginForm')
     let user = document.getElementById('user')
     let pw = document.getElementById('pw')
-    let storeged = Credenciales.name;
     let remember = document.getElementById('remember')
     let verify = { user: false, pw: false }
 
