@@ -14,8 +14,8 @@ document.addEventListener('DOMContentLoaded', () => {
         verify.user = (user.value === Credenciales.user)
         verify.pw = (pw.value === Credenciales.pass)
 
-        verify()
-    function verify(){
+        verifyFun()
+    function verifyFun(){
         if (verify.user && verify.pw) {
             if(remember.checked){
                 localStorage.setItem('user', user.value)

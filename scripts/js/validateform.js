@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     form.addEventListener('submit', (x) => {
         x.preventDefault()
+        hayError = false
         if (nombre.value === '' || nombre.value === null || nombre.value === 'undefined') {
             verifyContent("Nombre")
             hayError = true
