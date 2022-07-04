@@ -15,6 +15,7 @@ const successCallBack = (posicion) =>{
 	fetch('https://weatherapi-com.p.rapidapi.com/current.json?q='+(lat)+'%2C'+(long)+'', options)
 		.then(response => response.json())
 		.then(data =>{
+			console.log(data)
 			temperature.innerHTML = (data.location.name) +" "+ (data.current.temp_c) +"°C."
 		})
 		.catch(err => console.error(err));
