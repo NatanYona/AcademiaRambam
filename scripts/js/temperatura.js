@@ -1,20 +1,31 @@
 document.addEventListener('DOMContentLoaded', () => {
 let temperature = document.getElementById("temp")
+const successCallBack = (posicion) =>{
+	let lat = posicion.coords.latitude
+	let long = posicion.coords.longitude
+	
+	const options = {
+		method: 'GET',
+		headers: {
+			'X-RapidAPI-Key': 'c493238c03msha1167563a3b38e9p1c6f42jsnc5126cca31a4',
+			'X-RapidAPI-Host': 'weatherapi-com.p.rapidapi.com'
+		}
+	};
+	
+	fetch('https://weatherapi-com.p.rapidapi.com/current.json?q='+(lat)+'%2C'+(long)+'', options)
+		.then(response => response.json())
+		.then(data =>{
+			temperature.innerHTML = (data.location.name) +" "+ (data.current.temp_c) +"°C."
+		})
+		.catch(err => console.error(err));
+}
 
-const options = {
-	method: 'GET',
-	headers: {
-		'X-RapidAPI-Key': 'c493238c03msha1167563a3b38e9p1c6f42jsnc5126cca31a4',
-		'X-RapidAPI-Host': 'yahoo-weather5.p.rapidapi.com'
-	}
-};
+const errorCallBack = (error) =>{
+	console.log(error)
+}
+navigator.geolocation.getCurrentPosition(successCallBack, errorCallBack)
 
-fetch('https://yahoo-weather5.p.rapidapi.com/weather?location=Cordoba%2C%20Ar&format=json&u=c', options)
-	.then(response => response.json())
-	.then(data =>{
-        temperature.innerHTML = (data.location.city) +" "+ (data.current_observation.condition.temperature) +"°C."
-		
-    })
-    
-	.catch(err => console.error(err))
+
+
+
 })
