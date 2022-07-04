@@ -12,7 +12,8 @@ const options = {
 fetch('https://yahoo-weather5.p.rapidapi.com/weather?location=Cordoba%2C%20Ar&format=json&u=c', options)
 	.then(response => response.json())
 	.then(data =>{
-        temperature.innerHTML = "Cordoba, " + (data.current_observation.condition.temperature) +"°C."
+        temperature.innerHTML = (data.location.city) +" "+ (data.current_observation.condition.temperature) +"°C."
+		
     })
     
 	.catch(err => console.error(err))

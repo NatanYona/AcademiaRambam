@@ -1,43 +1,42 @@
 /* Login */
-const Credenciales = {user: 'damian@gmail.com', pass: "1234"};
 document.addEventListener('DOMContentLoaded', () => {
     // Obtenemos el formulario
     let form = document.getElementById('loginForm')
-    let user = document.getElementById('user')
-    let pw = document.getElementById('pw')
+    let userForm = document.getElementById('user')
+    let pwForm = document.getElementById('pw')
     let remember = document.getElementById('remember')
     let verify = { user: false, pw: false }
-
     // Comprobamos que los campos no estén vacios
     form.addEventListener('submit', (e) => {
         e.preventDefault()
-        verify.user = (user.value === Credenciales.user)
-        verify.pw = (pw.value === Credenciales.pass)
-
-        verifyFun()
-    function verifyFun(){
-        if (verify.user && verify.pw) {
-            if(remember.checked){
-                localStorage.setItem('user', user.value)
+        if(userForm.value == credenciales[0].user){
+            if(pwForm.value == credenciales[0].pw){
+                if (remember.checked) {
+                    localStorage.setItem('user', credenciales[0].username)
+                }
+                else {
+                    sessionStorage.setItem('user', credenciales[0].username)
+                }
+                window.location.href = '../index.html'
             }
-                else{
-                sessionStorage.setItem('user', user.value)
+            else{
+                console.log("pw")
             }
-            userError.innerText = ''
-            pwError.innerText = ''
-            window.location.href = '../index.html'
         }
-        else if (verify.user == false) {
-            let userError = document.getElementById('userError')
-            userError.innerHTML = 'Usuario incorrecto'
+        else{
+            console.log("nombre")
         }
-        else if (verify.pw == false) {
-            let pwError = document.getElementById('pwError')
-            pwError.innerHTML = 'Contraseña incorrecta'
-            userError.innerHTML = ''
-        }
-    }
     })
-    
-})
 
+
+
+//obtener info del json
+async function requestUpgrades() {
+        const response = await fetch("../scripts/json/credenciales.json")
+        const data = await response.json()
+        credenciales = data
+        JSON.stringify(data)
+        console.log(credenciales[0].pw)
+        return credenciales
+    }requestUpgrades();
+})
