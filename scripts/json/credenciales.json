@@ -9,4 +9,10 @@
         "pw":"7890",
         "username":"Juan"
     }
+    ,
+    {
+        "user":"peq@gmail.com",
+        "pw":"666",
+        "username":"Peq"
+    }
 ]
