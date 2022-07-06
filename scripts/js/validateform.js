@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
             verifyContent("Mensaje")
             hayError = true
         }
-        else if (!hayError){
+        if (!hayError){
             Toastify({
                 text: "Gracias por contactarte con nosotros " + nombre.value + "!",
                 style: {

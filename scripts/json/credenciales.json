@@ -1,8 +1,12 @@
-[
-    {
+[{
         "user":"damian@gmail.com",
         "pw":"1234",
         "username":"Damian"
     }
-    
+    ,
+    {
+        "user":"juan@gmail.com",
+        "pw":"7890",
+        "username":"Juan"
+    }
 ]

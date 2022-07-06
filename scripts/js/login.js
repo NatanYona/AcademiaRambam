@@ -5,38 +5,51 @@ document.addEventListener('DOMContentLoaded', () => {
     let userForm = document.getElementById('user')
     let pwForm = document.getElementById('pw')
     let remember = document.getElementById('remember')
-    let verify = { user: false, pw: false }
-    // Comprobamos que los campos no estén vacios
+//Comprobamos que se encuentren en el mismo idex el user y la pw
     form.addEventListener('submit', (e) => {
         e.preventDefault()
-        if(userForm.value == credenciales[0].user){
-            if(pwForm.value == credenciales[0].pw){
+        const verifyUser = credenciales.findIndex(credenciales => credenciales.user === userForm.value)
+        if (verifyUser != -1) {
+            if (pwForm.value == credenciales[verifyUser].pw) {
                 if (remember.checked) {
-                    localStorage.setItem('user', credenciales[0].username)
+                    localStorage.setItem('user', credenciales[verifyUser].username)
                 }
                 else {
-                    sessionStorage.setItem('user', credenciales[0].username)
+                    sessionStorage.setItem('user', credenciales[verifyUser].username)
                 }
                 window.location.href = '../index.html'
             }
-            else{
-                console.log("pw")
+            else {
+                Toastify({
+                    text: "Contraseña Incorrecta!",
+                    style: {
+                        background: "linear-gradient(to right, #951111, #e70801)",
+                    },
+                    duration: 3000
+                }).showToast();
+                form.reset()
             }
         }
         else{
-            console.log("nombre")
-        }
+            Toastify({
+            text: "Usuario Incorrecto!",
+            style: {
+                background: "linear-gradient(to right, #951111, #e70801)",
+            },
+            duration: 3000
+        }).showToast();
+    }
+        form.reset()
     })
 
 
 
-//obtener info del json
-async function requestUpgrades() {
+
+    //obtener info del json
+    async function requestUpgrades() {
         const response = await fetch("../scripts/json/credenciales.json")
         const data = await response.json()
         credenciales = data
-        JSON.stringify(data)
-        console.log(credenciales[0].pw)
         return credenciales
-    }requestUpgrades();
+    } requestUpgrades();
 })

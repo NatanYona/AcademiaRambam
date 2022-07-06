@@ -70,6 +70,9 @@
 .cursosSection {
   flex-wrap: wrap; }
 
+.cardCustom {
+  width: 18rem; }
+
 /* Extensiones */
 .extensionesDiv {
   display: flex;

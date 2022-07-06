@@ -1,37 +1,35 @@
 [
     {
         "titulo":"Tasacion de Inmueble",
-        "desc":"Aprendizaje de métodos para la tasación de distintos",
+        "desc":"Aprendizaje de métodos para la tasación de distintos ",
+        "resaltado":"Productos Inmobiliarios",
         "Info":"",
-        "img":""
+        "img":"../../img/cursos/cursoInmueble.jpg"
         
     }
     ,
     {
-        "Titutlo":"",
-        "Descripcion":"",
+        "titulo":"Tasación de Maquinaria Industrial",
+        "desc":"Manejo de metodología para determinar los valores de las distintas tipologícas de las ",
+        "resaltado":"Maquinarias Industriales",
         "Info":"",
-        "img":""
+        "img":"../../img/cursos/cursoMaquina.jpg"
     }
     ,
     {
-        "Titutlo":"",
-        "Descripcion":"",
+        "titulo":"Tasación de Bienes Intangibles",
+        "desc":"¿Qué vale mi emprendimiento en marcha? ¿Es solo la suma de activos físicos? Poder responder estas preguntas nos llevan a desarrollar métodos para determinar el valor de los ",
+        "resaltado":"Activos no Físicos",
         "Info":"",
-        "img":""
+        "img":"../../img/cursos/cursosIntangible.jpg"
     }
     ,
     {
-        "Titutlo":"",
-        "Descripcion":"",
+        "titulo":"Tasación Rural",
+        "desc":"Campos, animales, alambrados, tractores, cosechadoras, silos, tanques australianos... Brindar todas las herramientas para valuar los distintos ",
+        "resaltado":"Bienes que encontramos en el campo",
         "Info":"",
-        "img":""
+        "img":"../../img/cursos/cursoAgricultura.jpg"
     }
-    ,
-    {
-        "Titutlo":"",
-        "Descripcion":"",
-        "Info":"",
-        "img":""
-    }
+
 ]
