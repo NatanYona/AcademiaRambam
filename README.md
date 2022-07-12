@@ -11,9 +11,9 @@ La pagina esta diseñada utilizando el Framework de Booststrap.
 En la parte superior de la pagina tenemos una opcion para iniciar sesion.
 Las credenciales al estar desarrolladas en el FrontEnd no son muy seguras, pero por solo la intencion de la prueba, las utilizadas para tener una completa experiencia son:
 
--User: damian@gmail.com
+-User: `"damian@gmail.com"`
 
--Pw: 1234
+-Pw: `"1234"`
 
 Y con la intencion de comprobar el correcto funcionamiento de esta funcion, tambien existe otro usuario `"juan@gmail.com"` con su pw `"7890"`. Esto se hizo para comprobar de que cada user se verifique con su respectiva contraseña.
 
