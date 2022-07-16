@@ -1,3 +1,5 @@
+
+// Carga de lista de cursos
 document.addEventListener('DOMContentLoaded', () => {
     let SectionCursos = document.getElementById("SecCursos")
     async function requestUpgrades(){
@@ -8,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log(cursos)
 }requestUpgrades();
 
+// Creacion de lista de Cursos
 function CursosDOM(){
     for (item in cursos){
     let newCurso = document.createElement("div")  

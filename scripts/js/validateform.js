@@ -1,3 +1,4 @@
+//obteniendo ID del form
 document.addEventListener('DOMContentLoaded', () => {
     let form = document.getElementById('contactForm')
     let nombre = document.getElementById('contactName')
@@ -8,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     form.addEventListener('submit', (x) => {
         x.preventDefault()
-        hayError = false
+        hayError = false // verificacion de que el forms no esta vacio
         if (nombre.value === '' || nombre.value === null || nombre.value === 'undefined') {
             verifyContent("Nombre")
             hayError = true
@@ -26,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
             hayError = true
         }
         if (!hayError){
-            Toastify({
+            Toastify({ //success send
                 text: "Gracias por contactarte con nosotros " + nombre.value + "!",
                 style: {
                     background: "linear-gradient(to right, #00b09b, #96c93d)",
@@ -38,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     )
 
-
+//toastify dependiendo del campo incompleto
 function verifyContent(campo){
     Toastify({
         text: "Tienes que agregar un "+ campo + "!",

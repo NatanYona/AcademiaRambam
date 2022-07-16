@@ -5,16 +5,17 @@ document.addEventListener('DOMContentLoaded', () => {
     let userForm = document.getElementById('user')
     let pwForm = document.getElementById('pw')
     let remember = document.getElementById('remember')
-//Comprobamos que se encuentren en el mismo idex el user y la pw
+
+    
     form.addEventListener('submit', (e) => {
-        e.preventDefault()
+        e.preventDefault() //revision de formulario
         const verifyUser = credenciales.findIndex(credenciales => credenciales.user === userForm.value)
-        if (verifyUser != -1) {
-            if (pwForm.value == credenciales[verifyUser].pw) {
-                if (remember.checked) {
+        if (verifyUser != -1) { //verify si el user existe
+            if (pwForm.value == credenciales[verifyUser].pw) { //verify el index del user con la contraseña ingresada 
+                if (remember.checked) { //Si se marca recordarme
                     localStorage.setItem('user', credenciales[verifyUser].username)
                 }
-                else {
+                else { //Si no se marca recordarme
                     sessionStorage.setItem('user', credenciales[verifyUser].username)
                 }
                 window.location.href = '../index.html'
