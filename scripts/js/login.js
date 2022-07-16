@@ -10,12 +10,15 @@ document.addEventListener('DOMContentLoaded', () => {
     form.addEventListener('submit', (e) => {
         e.preventDefault() //revision de formulario
         const verifyUser = credenciales.findIndex(credenciales => credenciales.user === userForm.value)
-        if (verifyUser != -1) { //verify si el user existe
+        //verify si el user existe
+        if (verifyUser != -1) { 
             if (pwForm.value == credenciales[verifyUser].pw) { //verify el index del user con la contraseña ingresada 
-                if (remember.checked) { //Si se marca recordarme
+                //Si se marca recordarme
+                if (remember.checked) { 
                     localStorage.setItem('user', credenciales[verifyUser].username)
                 }
-                else { //Si no se marca recordarme
+                //Si no se marca recordarme
+                else { 
                     sessionStorage.setItem('user', credenciales[verifyUser].username)
                 }
                 window.location.href = '../index.html'

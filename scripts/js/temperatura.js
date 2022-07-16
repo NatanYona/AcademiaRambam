@@ -1,7 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
 let temperature = document.getElementById("temp")
 const successCallBack = (posicion) =>{
-	let lat = posicion.coords.latitude
+	//agarra las coordenadas del usuario si se le permite los permisos y otorga la Latitud y Longitud por separado
+	let lat = posicion.coords.latitude 
 	let long = posicion.coords.longitude
 	
 	//llamado de API
@@ -16,7 +17,6 @@ const successCallBack = (posicion) =>{
 	fetch('https://weatherapi-com.p.rapidapi.com/current.json?q='+(lat)+'%2C'+(long)+'', options) //definiendo parametros de datos a llamar
 		.then(response => response.json())
 		.then(data =>{
-			console.log(data)
 			temperature.innerHTML = (data.location.name) +" "+ (data.current.temp_c) +"°C." //recogida de datos necesarios 
 		})
 		.catch(err => console.error(err));
@@ -26,8 +26,5 @@ const errorCallBack = (error) =>{
 	console.log(error)
 }
 navigator.geolocation.getCurrentPosition(successCallBack, errorCallBack) //solicitud de permisos de ubicacion
-
-
-
 
 })

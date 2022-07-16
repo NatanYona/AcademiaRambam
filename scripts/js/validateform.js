@@ -9,7 +9,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     form.addEventListener('submit', (x) => {
         x.preventDefault()
-        hayError = false // verificacion de que el forms no esta vacio
+        hayError = false 
+        // verificacion de que el forms no esta vacio
         if (nombre.value === '' || nombre.value === null || nombre.value === 'undefined') {
             verifyContent("Nombre")
             hayError = true
@@ -27,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
             hayError = true
         }
         if (!hayError){
-            Toastify({ //success send
+            Toastify({ //Envia un mensaje con el nombre del User para confirmar que se envio el forms.
                 text: "Gracias por contactarte con nosotros " + nombre.value + "!",
                 style: {
                     background: "linear-gradient(to right, #00b09b, #96c93d)",

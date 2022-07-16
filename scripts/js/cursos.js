@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const data = await response.json()
     cursos = data
     CursosDOM()
-    console.log(cursos)
 }requestUpgrades();
 
 // Creacion de lista de Cursos
